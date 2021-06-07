@@ -1,0 +1,142 @@
+/* public-sans-100 - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/public-sans-v5-latin-100.eot"); /* IE9 Compat Modes */
+  src:
+       url("../fonts/public-sans-v5-latin-100.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/public-sans-v5-latin-100.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/public-sans-v5-latin-100.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/public-sans-v5-latin-100.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/public-sans-v5-latin-100.svg#PublicSans") format("svg"); /* Legacy iOS */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v5-latin-regular.eot"); /* IE9 Compat Modes */
+  src:
+       url("../fonts/public-sans-v5-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/public-sans-v5-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/public-sans-v5-latin-regular.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/public-sans-v5-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/public-sans-v5-latin-regular.svg#PublicSans") format("svg"); /* Legacy iOS */
+}
+/* public-sans-500 - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/public-sans-v5-latin-500.eot"); /* IE9 Compat Modes */
+  src:
+       url("../fonts/public-sans-v5-latin-500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+       url("../fonts/public-sans-v5-latin-500.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/public-sans-v5-latin-500.woff") format("woff"), /* Modern Browsers */
+       url("../fonts/public-sans-v5-latin-500.ttf") format("truetype"), /* Safari, Android, iOS */
+       url("../fonts/public-sans-v5-latin-500.svg#PublicSans") format("svg"); /* Legacy iOS */
+}
+:root{
+  --color-gradient:linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  --color-green:#30C88F;
+  --color-dark:#2D314D;
+  --color-grey:#9597A5;
+  --color-white:#fff;
+}
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:"Public Sans", "Arial", sans-serif;
+  font-weight: normal;
+  background-color: #F2F2F2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site__header{
+background-color: #fff;
+}
+.site__header-inner{
+  display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header__logo-link{
+  text-decoration: none;
+  width: 139px;
+  height: 20px;
+
+}
+.site__nav-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.site__nav-item ~ .site__nav-item{
+  margin-left: 30px;
+}
+.site__nav-item{
+  padding: 32px 0;
+  border-bottom: 4px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.site__nav-item:hover{
+border-bottom: 4px solid var(--color-green);
+}
+.site__nav-link{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: var(--color-grey);
+  transition: color 0.3s ease;
+}
+.site__nav-link:hover{
+  color: var(--color-dark);
+}
+
+
+
+
