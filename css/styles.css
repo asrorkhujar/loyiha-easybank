@@ -92,6 +92,7 @@ img {
   overflow: hidden;
 }
 
+/* HEADER */
 .site__header{
 background-color: #fff;
 }
@@ -104,7 +105,10 @@ justify-content: space-between;
   text-decoration: none;
   width: 139px;
   height: 20px;
-
+  transition: opacity 0.3s ease;
+}
+.header__logo-link:hover{
+  opacity: 0.8;
 }
 .site__nav-list{
   padding: 0;
@@ -136,6 +140,23 @@ border-bottom: 4px solid var(--color-green);
 .site__nav-link:hover{
   color: var(--color-dark);
 }
+.button{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  color: var(--color-white);
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  padding: 8px 34px;
+  border-radius: 22px;
+  transition: opacity 0.3s ease;
+}
+.button:hover{
+  opacity: 0.4;
+}
+
+/* MAIN */
 
 
 
