@@ -195,12 +195,26 @@ img {
 }
 
 .hero{
+  position: relative;
+  z-index: 1;
   padding-top: 170px;
   padding-bottom: 170px;
   content: "";
   background-image: url(../img/hero-bg-desktop.svg);
   background-repeat: no-repeat;
-  background-position: calc(50% + 590px) -260px;
+  background-position: calc(50% + 600px) -260px;
+}
+.hero::after {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% + 100px);
+  top: -115px;
+  width: 729px;
+  height: 900px;
+  background-image: url(../img/hero-phones-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
 }
 
 .hero__img{
