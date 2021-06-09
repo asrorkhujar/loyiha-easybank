@@ -161,6 +161,7 @@ img {
   padding: 8px 34px;
   border-radius: 22px;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 .button:hover{
   opacity: 0.4;
